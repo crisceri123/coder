@@ -1,0 +1,16 @@
+@import "_style";
+ul {
+    height: 85px;
+    li {
+    padding: 10px;
+    margin: 10px;
+	}
+	li:hover {
+    height: 30px;
+	} 
+}
+@for $var from 3 through 4{
+    h#{$var} {
+        font-size: 7.5rem/$var;
+    }
+}
