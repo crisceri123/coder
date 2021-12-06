@@ -11,8 +11,8 @@ h1 {
 }
 footer{
     text-align: center;
-    animation-name: cambioFondo;
-    animation-duration: 20s;
+    margin: 0;
+    background-image: linear-gradient(pink, violet);
 }
 ul {
     height: 85px;
@@ -24,6 +24,9 @@ li {
 li:hover {
     height: 30px;
 } 
+table, tr, td{
+    border: 1px solid black;
+}
 .imagenfondo{
     background-image: url("https://placedog.net/200");
     background-repeat: repeat;
@@ -70,23 +73,7 @@ p {
 .footer  {
     grid-area: footer;
 }
-@keyframes cambioFondo {
-    0% {
-        background-image: linear-gradient(pink, violet);
-    }
-    25% {
-        background-image: radial-gradient(violet, purple);
-    }
-    50% {
-        background-image: radial-gradient(purple, rgb(0,12,255));
-    }
-    75% {
-        background-image: radial-gradient(blue, purple);
-    }
-    100% {
-        background-image: linear-gradient(purple, violet);
-    }
-}
+
 
 
 
@@ -96,13 +83,14 @@ p {
 
 /*tablet */
 @media (min-width: 600px) and (max-width: 1023px) {
-    body { background-color: green;
     }
 /*celu */
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
-    body{ background-color: red;
+        ul{
+        height: 2000px;
+    }
     }
 
 }
